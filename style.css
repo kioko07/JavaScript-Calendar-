@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  background-color: saddlebrown;
+}
+.container{
+  width: 500px;
+  height: 400px;
+  border: 1px solid;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+}
+.month h1{
+  font-weight: 400;
+  font-size: 40px;
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+.month p{
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+.month{
+ background-color: rgba(43, 226, 202, 0.712);
+ height: 120px;
+ width: 100%;
+ border-radius: 10px 10px 0 0;
+ /* display: flex; */
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+}
+.wkdays{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.wkdays div{
+  width: 100%;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 5px;
+}
+.days{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+.days div{
+  font-weight: bold;
+  font-size: 30px;
+  margin: 3px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62.2px;
+  justify-content: space-evenly;
+}
+.days div:hover:not(.empty){
+  border: 3px dotted black;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.today{
+  background-color: rgb(0, 255, 0);
+  border-radius: 50%;
+}
